@@ -1,6 +1,6 @@
 {
-  "name": "remotion-components",
-  "version": "0.0.1",
+  "name": "@tutorialedge/remotion-components",
+  "version": "0.0.7",
   "description": "",
   "scripts": {
     "rollup": "rollup -c"
@@ -25,10 +25,15 @@
     "rollup-plugin-dts": "^4.2.0",
     "typescript": "^4.6.2"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "index.ts"
   ],
-  "types": "dist/index.d.ts"
+  "types": "src/index.d.ts",
+  "dependencies": {
+    "remotion": "^2.6.9"
+  }
 }
